@@ -9,7 +9,7 @@ from flask import Flask
 app = Flask(__name__)
 
 # Define a route that handles GET requests
-@app.route('/createJira', methods=['POST'])
+@app.route('/createJira', methods=['POST']) #This is a Decorator; This tells flask Run this function createJira() when someone opens /createJira URL.
 def createJira():
 
     url = "https://akashshukla.atlassian.net/rest/api/3/issue"
